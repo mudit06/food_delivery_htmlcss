@@ -1,0 +1,249 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variable */
+:root{
+
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    /* width: 100%; */
+    position: sticky;
+    top:0px;
+     /* justify-content: center;  */
+}
+
+/* Navigation Bar : logo and img  */
+#logo{
+    margin: 10px 30px;
+
+}
+
+#logo img{
+    margin: 0px 10px;
+    height: 85px;
+    width: 85px;
+
+}
+
+/* Navigation Bar : list styling  */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter', cursive;
+}
+#navbar ul li a{
+     color: white; 
+    display: block;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+     color:black; 
+    background-color: white;
+}
+
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background-image: url('/img/back.jpg');
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* services section  */
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    
+    padding: 34px;
+    margin: 21px 7px;
+    border-radius: 25px;
+    background-color: beige;
+    
+}
+#services .box img{
+    height:170px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+/* clients-section */
+#client-section{
+    height: 320px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: url('/img/back3.jpg');
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height: 100px;
+}
+
+.client-item{
+    padding: 30px;
+}
+
+/* contact-section  */
+#contact{
+     position: relative;
+      /* height: 200px;  */
+}
+#contact::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('/img/back2.jpg');
+    z-index: -1;
+    opacity: 0.7;
+    position: absolute;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 0.4rem;
+    width: 100%;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box input,#contact-box textarea{
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 8px;
+}
+
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+footer{
+    color: khaki;
+    background-color: black;
+    padding: auto;
+
+}
+
+/* utility class  */
+
+.h-primary{
+    font-size: 2.5rem;
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 22px;
+    border: 2px solid gray;
+    border-radius: 22px;
+    margin: 15px;
+    background-color: lavenderblush;
+    font-size: 1.3rem;
+    font-family: 'Architects Daughter';
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+
+
